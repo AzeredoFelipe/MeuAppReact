@@ -1,0 +1,54 @@
+/* Home.css */
+.layout-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5em 1em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+  }
+  
+  .activity-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .activity-card {
+    display: block;
+    padding: 1em;
+    width: 150px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .activity-card:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+    border-color: #4CAF50;
+  }
+  
+  main {
+    margin-top: 2em;
+  }
+  

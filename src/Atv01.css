@@ -1,0 +1,53 @@
+/* Atv01.css */
+.atv01-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px; /* Largura máxima */
+    margin: 2em auto; /* Margem centralizada */
+    padding: 2em;
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.atv01-title {
+    color: #00796b; /* Cor do título */
+    font-size: 2em; /* Tamanho do título */
+    margin-bottom: 1em; /* Espaço abaixo do título */
+}
+
+.letreiro-container {
+    margin: 1.5em 0; /* Margem vertical */
+}
+
+.relogio-container {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    min-height: 50px; /* Altura mínima para o relógio */
+    position: relative; /* Permite que o relógio tenha um espaço fixo */
+}
+
+.relogio {
+    font-size: 1.5em; /* Tamanho da fonte do relógio */
+    color: #00796b; /* Cor do relógio */
+    background-color: transparent; /* Fundo transparente */
+    position: absolute; /* Fixa a posição do relógio */
+    top: 0; /* Fixa na parte superior do contêiner */
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.75em 1.5em;
+    background-color: #00796b; /* Cor do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.back-link:hover {
+    background-color: #004d40; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala */
+}
