@@ -1,0 +1,15 @@
+/* src/components/Title.css */
+
+.title-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title-container h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.title-container p {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,65 @@
+/* src/components/MainPage.css */
+
+.mainpage-container {
+    padding: 20px;
+}
+
+/* Estilo para o container que guarda os ídolos */
+.idols-container {
+    display: flex;
+    flex-wrap: wrap;         /* Permite que os itens quebrem para a linha seguinte */
+    gap: 20px;               /* Espaço entre os itens */
+    justify-content: center; /* Alinha os itens ao centro */
+}
+
+/* Estilo do item individual do ídolo (imagem à esquerda e descrição à direita) */
+.idol-item {
+    display: flex;                    /* Usando flexbox para alinhar a imagem à esquerda e o texto à direita */
+    flex: 0 1 calc(50% - 20px);        /* Faz com que cada item ocupe 50% da largura menos o espaço de gap */
+    box-sizing: border-box;           /* Para garantir que a largura total seja calculada corretamente */
+    text-align: left;                 /* Alinha o texto à esquerda */
+    padding: 15px;                    /* Adiciona espaçamento interno para os itens */
+    background-color: #f9f9f9;        /* Fundo claro para os cards */
+    border-radius: 10px;              /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+/* Estilo da imagem */
+.idol-item img {
+    width: 150px;               /* Largura fixa para as imagens */
+    height: 150px;              /* Altura fixa para as imagens */
+    object-fit: cover;         /* Assegura que as imagens não sejam distorcidas */
+    border-radius: 8px;        /* Bordas arredondadas nas imagens */
+    margin-right: 20px;        /* Espaço entre a imagem e o texto */
+    flex-shrink: 0;            /* Evita que a imagem encolha quando houver muito conteúdo */
+}
+
+/* Estilo do título do ídolo */
+.idol-item h3 {
+    font-family: 'Poppins', sans-serif; /* Fonte mais estilosa para o nome */
+    font-size: 1.5rem;                   /* Tamanho maior para o nome */
+    margin: 0;
+    color: #333;                         /* Cor de texto mais suave */
+}
+
+/* Estilo da descrição do ídolo */
+.idol-item p {
+    font-family: 'Lora', serif;        /* Fonte elegante para a descrição */
+    font-size: 1rem;                   /* Tamanho padrão da fonte */
+    color: #555;                       /* Cor do texto mais suave */
+    margin-top: 5px;
+    flex-grow: 1;                      /* Faz a descrição ocupar o espaço disponível */
+}
+
+/* Responsividade - Para telas menores, mudar para uma coluna única */
+@media (max-width: 768px) {
+    .idol-item {
+        flex-direction: column;  /* Coloca a imagem em cima e a descrição embaixo */
+        text-align: center;      /* Alinha o texto ao centro */
+    }
+
+    .idol-item img {
+        margin-right: 0;         /* Remove a margem à direita quando estiver em coluna */
+        margin-bottom: 10px;     /* Espaço entre a imagem e a descrição */
+    }
+}

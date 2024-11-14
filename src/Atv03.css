@@ -1,34 +1,38 @@
+/* Atv03.css */
+
+/* Estilos gerais para o container da Atividade 3 */
 .atv03-container {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2em;
-    text-align: center;
-  }
-  
-  .atv03-title {
-    color: #4CAF50;
-    font-size: 2em;
-    margin-bottom: 1.5em;
-  }
-  
-  .componente-container {
-    margin: 2em 0;
-  }
-  
-  .back-link {
-    display: inline-block;
-    margin-top: 2em;
-    padding: 0.75em 1.5em;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .back-link:hover {
-    background-color: #388e3c;
-    transform: scale(1.05);
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o conteúdo */
+ 
+}
+
+
+/* Link inferior (voltar para a página principal) */
+.link-inferior {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #007BFF;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito hover para o link de voltar */
+.link-inferior:hover {
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para a MainPage, caso precise ajustar */
+.mainpage-container {
+  margin-bottom: 30px; /* Espaçamento inferior */
+}
