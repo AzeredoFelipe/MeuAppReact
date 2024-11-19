@@ -4,24 +4,23 @@
     padding: 20px;
 }
 
-/* Estilo para o container que guarda os ídolos */
+
 .idols-container {
     display: flex;
-    flex-wrap: wrap;         /* Permite que os itens quebrem para a linha seguinte */
-    gap: 20px;               /* Espaço entre os itens */
-    justify-content: center; /* Alinha os itens ao centro */
+    flex-wrap: wrap;         
+    gap: 20px;               
+    justify-content: center; 
 }
 
-/* Estilo do item individual do ídolo (imagem à esquerda e descrição à direita) */
 .idol-item {
-    display: flex;                    /* Usando flexbox para alinhar a imagem à esquerda e o texto à direita */
-    flex: 0 1 calc(50% - 20px);        /* Faz com que cada item ocupe 50% da largura menos o espaço de gap */
-    box-sizing: border-box;           /* Para garantir que a largura total seja calculada corretamente */
-    text-align: left;                 /* Alinha o texto à esquerda */
-    padding: 15px;                    /* Adiciona espaçamento interno para os itens */
-    background-color: #f9f9f9;        /* Fundo claro para os cards */
-    border-radius: 10px;              /* Bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    display: flex;                    
+    flex: 0 1 calc(50% - 20px);        
+    box-sizing: border-box;           
+    text-align: left;                
+    padding: 15px;                   
+    background-color: #f9f9f9;        
+    border-radius: 10px;              
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilo da imagem */

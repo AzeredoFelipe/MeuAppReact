@@ -1,29 +1,23 @@
-/* src/Contador.css */
+.contador {
+  display: flex;               /* Ativa layout flexbox */
+  flex-direction: row;         /* Força elementos lado a lado */
+  justify-content: space-around; /* Espaço igual entre os elementos */
+  align-items: center;         /* Alinha verticalmente */
+  flex-wrap: nowrap;           /* Impede quebra de linha */
+  width: 100%;                 /* Ocupa a largura total */
+}
 
-.contador-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-  }
-  
-  .contador {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-  }
-  
-  .pessoa {
-    text-align: center;
-  }
-  
-  .imagem {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    width: 100px;
-    height: auto;
-    max-width: 100%;
+.pessoa {
+  flex: 1;                     /* Garante que os elementos ocupem espaços iguais */
+  max-width: 300px;            /* Limita a largura máxima */
+  text-align: center;          /* Centraliza o texto e conteúdo */
+  margin: 10px;                /* Adiciona espaçamento entre os elementos */
+}
 
-  }
-  
+.avatar {
+  width: 150px;                /* Largura fixa */
+  height: 150px;               /* Altura fixa */
+  object-fit: cover;           /* Ajusta imagem sem distorção */
+  border-radius: 50%;          /* Forma circular */
+  margin: 0 auto 10px;         /* Centraliza imagem horizontalmente */
+}
